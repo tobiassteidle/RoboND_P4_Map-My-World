@@ -156,4 +156,52 @@
       <dynamics damping="1.0" friction="1.0" />
    </joint>
 
+   <!-- Lidar -->
+   <link name="hokuyo">
+      <inertial>
+         <mass value="1e-5" />
+         <origin xyz="0.0 0 0" rpy="0 0 0" />
+         <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+      </inertial>
+
+      <collision name="collision">
+         <origin xyz="0 0 0" rpy="0 0 0" />
+         <geometry>
+            <box size="0.1 0.1 0.1" />
+         </geometry>
+      </collision>
+
+      <visual name="hokuyo_visual">
+         <origin xyz="0 0 0" rpy="0 0 0" />
+         <geometry>
+            <mesh filename="package://my_robot/meshes/hokuyo.dae" />
+         </geometry>
+      </visual>
+   </link>
+
+   <joint type="fixed" name="hokuyo_joint">
+      <origin xyz="0.15 0 0.1" rpy="0 0 0" />
+      <child link="hokuyo" />
+      <parent link="chassis" />
+      <axis xyz="0 1 0" rpy="0 0 0" />
+      <limit effort="10000" velocity="1000" />
+      <dynamics damping="1.0" friction="1.0" />
+   </joint>
+
+    <gazebo reference="chassis">
+       <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <gazebo reference="left_wheel">
+      <material>Gazebo/Green</material>
+    </gazebo>
+
+    <gazebo reference="right_wheel">
+       <material>Gazebo/Green</material>
+    </gazebo>
+
+    <gazebo reference="camera">
+       <material>Gazebo/Red</material>
+    </gazebo>
+
 </robot>
