@@ -32,3 +32,16 @@ $ source devel/setup.bash
 ```sh
 $ roslaunch my_robot world.launch
 ```
+
+# ToDos
+- [x] Setting up my_robot
+- [x] Robot Basic Setup
+- [x] Robot Enhancements
+- [x] Robot Sensors
+- [x] Gazebo Plugins
+- [x] RViz Integration
+- [x] House your Robot
+- [ ] Setting up ball_chaser
+- [ ] ROS Node: drive_bot
+- [ ] Model a White Ball
+- [ ] ROS Node: process_image
