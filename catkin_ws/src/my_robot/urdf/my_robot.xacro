@@ -188,6 +188,7 @@
       <dynamics damping="1.0" friction="1.0" />
    </joint>
 
+    <!-- Gazebo Materials -->
     <gazebo reference="chassis">
        <material>Gazebo/Blue</material>
     </gazebo>
