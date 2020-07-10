@@ -42,6 +42,6 @@ $ roslaunch my_robot world.launch
 - [x] RViz Integration
 - [x] House your Robot
 - [x] Setting up ball_chaser
-- [ ] ROS Node: drive_bot
-- [ ] Model a White Ball
+- [x] ROS Node: drive_bot
+- [x] Model a White Ball
 - [ ] ROS Node: process_image
