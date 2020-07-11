@@ -31,17 +31,5 @@ $ source devel/setup.bash
 #### Step 5 Run the Simulation  
 ```sh
 $ roslaunch my_robot world.launch
+$ roslaunch ball_chaser ball_chaser.launch
 ```
-
-# ToDos
-- [x] Setting up my_robot
-- [x] Robot Basic Setup
-- [x] Robot Enhancements
-- [x] Robot Sensors
-- [x] Gazebo Plugins
-- [x] RViz Integration
-- [x] House your Robot
-- [x] Setting up ball_chaser
-- [x] ROS Node: drive_bot
-- [x] Model a White Ball
-- [ ] ROS Node: process_image
