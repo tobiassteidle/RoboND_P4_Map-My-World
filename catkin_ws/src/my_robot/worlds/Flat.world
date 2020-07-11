@@ -4084,10 +4084,10 @@
       <pose frame=''>-0.864582 3.54044 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>575 140000000</sim_time>
-      <real_time>55 493157709</real_time>
-      <wall_time>1594388045 173527547</wall_time>
-      <iterations>54133</iterations>
+      <sim_time>603 229000000</sim_time>
+      <real_time>35 740670940</real_time>
+      <wall_time>1594446123 294109304</wall_time>
+      <iterations>28089</iterations>
       <model name='Simple_Flat'>
         <pose frame=''>-0.014366 -0.243612 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -4243,7 +4243,7 @@
         </link>
       </model>
       <model name='my_ball'>
-        <pose frame=''>7.14182 0.250428 -0.4 0 -0 0</pose>
+        <pose frame=''>7.14182 0.25043 -0.4 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
           <pose frame=''>8.4035 -1.01514 0.1 0 -0 0</pose>
@@ -4253,25 +4253,25 @@
         </link>
       </model>
       <model name='my_robot'>
-        <pose frame=''>5.24669 0.729373 0.100002 -1e-06 0.000599 3.13707</pose>
+        <pose frame=''>5.2469 0.72943 0.100002 0 0.00035 3.13857</pose>
         <scale>1 1 1</scale>
         <link name='left_wheel'>
-          <pose frame=''>5.24601 0.579374 0.100002 -2e-06 -0.002381 3.13707</pose>
-          <velocity>0.001298 0.001204 0.004077 -0.012066 0.01298 5e-06</velocity>
-          <acceleration>-0.047972 2.40072 8.15447 0.893305 -0.369853 -0.017464</acceleration>
-          <wrench>-0.239862 12.0036 40.7724 0 -0 0</wrench>
+          <pose frame=''>5.24644 0.579431 0.100002 -2e-06 -0.003042 3.13857</pose>
+          <velocity>0.000392 0.00128 0.004312 -0.012821 0.003916 9e-06</velocity>
+          <acceleration>-0.051623 2.55598 8.62436 -0.515508 -0.414514 -0.015944</acceleration>
+          <wrench>-0.258114 12.7799 43.1218 0 -0 0</wrench>
         </link>
         <link name='right_wheel'>
-          <pose frame=''>5.24737 0.879371 0.100002 2e-06 0.004268 3.13707</pose>
-          <velocity>0.001297 0.001209 0.000313 -0.012081 0.012972 1e-05</velocity>
-          <acceleration>-0.038741 2.41895 0.62496 0.916123 -0.381242 -0.022631</acceleration>
-          <wrench>-0.193706 12.0947 3.1248 0 -0 0</wrench>
+          <pose frame=''>5.24735 0.879428 0.100002 2e-06 0.00481 3.13857</pose>
+          <velocity>0.000391 0.001284 0.00033 -0.012834 0.003908 7e-06</velocity>
+          <acceleration>-0.043128 2.56493 0.660372 -0.543306 -0.425965 -0.019499</acceleration>
+          <wrench>-0.215642 12.8246 3.30186 0 -0 0</wrench>
         </link>
         <link name='robot_footprint'>
-          <pose frame=''>5.24669 0.729373 0.100002 -1e-06 0.000599 3.13707</pose>
-          <velocity>0.0013 0.001145 0.002203 -0.012351 0.012977 3.3e-05</velocity>
-          <acceleration>-0.044986 2.28353 4.40475 0.359946 -0.36714 -0.02601</acceleration>
-          <wrench>-0.679289 34.4813 66.5117 0 -0 0</wrench>
+          <pose frame=''>5.2469 0.72943 0.100002 0 0.00035 3.13857</pose>
+          <velocity>0.000391 0.001219 0.002329 -0.013099 0.003913 9e-06</velocity>
+          <acceleration>-0.048187 2.43244 4.65689 -1.08227 -0.413948 -0.017058</acceleration>
+          <wrench>-0.727625 36.7298 70.319 0 -0 0</wrench>
         </link>
       </model>
       <model name='oak_tree'>
@@ -4285,13 +4285,13 @@
         </link>
       </model>
       <model name='person_standing'>
-        <pose frame=''>-0.864585 3.54044 0 0 1e-06 5.6e-05</pose>
+        <pose frame=''>-0.864629 3.54044 0 -1e-06 -1e-06 0.000506</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-0.864585 3.54044 0 0 1e-06 5.6e-05</pose>
+          <pose frame=''>-0.864629 3.54044 0 -1e-06 -1e-06 0.000506</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.71538 -1.20515 -1.00279 -1.87312 1.37005 -3.10509</acceleration>
-          <wrench>137.23 -96.4121 -80.2233 0 -0 0</wrench>
+          <acceleration>2.21465 -1.54308 1.56401 -1.46522 0.846702 3.09718</acceleration>
+          <wrench>177.172 -123.446 125.121 0 -0 0</wrench>
         </link>
       </model>
       <model name='pine_tree'>
@@ -4347,18 +4347,6 @@
       <light name='sun'>
         <pose frame=''>0 0 10 0 -0 0</pose>
       </light>
-      <light name='user_point_light_0'>
-        <pose frame=''>-5.41216 2.98431 1 0 -0 0</pose>
-      </light>
-      <light name='user_point_light_1'>
-        <pose frame=''>-5.78845 -2.42641 1 0 -0 0</pose>
-      </light>
-      <light name='user_point_light_2'>
-        <pose frame=''>2.16508 -2.98242 1 0 -0 0</pose>
-      </light>
-      <light name='user_point_light_3'>
-        <pose frame=''>-1.86299 -2.68354 1 0 -0 0</pose>
-      </light>
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
@@ -4367,58 +4355,6 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <light name='user_point_light_0' type='point'>
-      <pose frame=''>-5.41216 2.98431 1 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
-      <specular>0.1 0.1 0.1 1</specular>
-      <attenuation>
-        <range>20</range>
-        <constant>0.5</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <cast_shadows>0</cast_shadows>
-      <direction>0 0 -1</direction>
-    </light>
-    <light name='user_point_light_1' type='point'>
-      <pose frame=''>-5.78845 -2.42641 1 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
-      <specular>0.1 0.1 0.1 1</specular>
-      <attenuation>
-        <range>20</range>
-        <constant>0.5</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <cast_shadows>0</cast_shadows>
-      <direction>0 0 -1</direction>
-    </light>
-    <light name='user_point_light_2' type='point'>
-      <pose frame=''>2.16508 -2.98242 1 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
-      <specular>0.1 0.1 0.1 1</specular>
-      <attenuation>
-        <range>20</range>
-        <constant>0.5</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <cast_shadows>0</cast_shadows>
-      <direction>0 0 -1</direction>
-    </light>
-    <light name='user_point_light_3' type='point'>
-      <pose frame=''>-1.86299 -2.68354 1 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
-      <specular>0.1 0.1 0.1 1</specular>
-      <attenuation>
-        <range>20</range>
-        <constant>0.5</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <cast_shadows>0</cast_shadows>
-      <direction>0 0 -1</direction>
-    </light>
     <model name='my_robot'>
       <link name='robot_footprint'>
         <pose frame=''>0 0 0 0 -0 0</pose>
