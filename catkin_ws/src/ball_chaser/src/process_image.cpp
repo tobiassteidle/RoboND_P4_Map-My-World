@@ -30,16 +30,17 @@ void process_image_callback(const sensor_msgs::Image img)
     int ball_pos_x = -1;
     const int column_width = img.step / 3;
 
-    for(int row = 0; row < img.height; ++row)
+    for(int idx = 0; idx < img.height * img.step; idx+=3)
     {
-        for(int step = 0; step < img.step; ++step)
+        const uint8_t r = img.data[idx];
+        const uint8_t g = img.data[idx+1];
+        const uint8_t b = img.data[idx+2];
+
+        if ((r == 255) && (g == 255) && (b == 255))
         {
-            const int i = (row * img.step) + step;
-            if(img.data[i] == white_pixel) {
-                ball_detected = true;
-                ball_pos_x = step;
-                break;
-            }
+            ball_detected = true;
+            ball_pos_x = idx % img.step;
+            break;
         }
     }
 
@@ -53,7 +54,7 @@ void process_image_callback(const sensor_msgs::Image img)
         if (ball_pos_x < column_width)
         {
       		// Turn left
-            drive_robot(0.0, 0.25);
+            drive_robot(0.0, 0.75);
     	}
     	else if (ball_pos_x > column_width && ball_pos_x < column_width * 2)
     	{
@@ -63,7 +64,7 @@ void process_image_callback(const sensor_msgs::Image img)
     	else
     	{
             // Turn right
-            drive_robot(0.0, -0.25);
+            drive_robot(0.0, -0.75);
     	}
     }
 }
