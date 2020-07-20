@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Map Server -->
+  <arg name="map_file" default="$(find my_robot)/maps/Flat.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+  <node name="amcl" pkg="amcl" type="amcl">
+  </node>
+
+  <node name="move_base" pkg="move_base" type="move_base">
+  </node>
+
+</launch>
