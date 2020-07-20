@@ -4436,5 +4436,6 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose frame=''>7.14182 0.250428 0 0 -0 0</pose>
     </model>
+  <plugin filename="libcollision_map_creator.so" name="collision_map_creator"/>
   </world>
 </sdf>
