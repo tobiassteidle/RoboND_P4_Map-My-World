@@ -11,11 +11,30 @@ $ sudo apt-get update
 $ sudo apt-get upgrade -y
 ```
 
-#### Step 2 Clone the lab folder in /home/workspace/
+#### Step 2 Install dependencies
+```sh
+$ sudo apt-get install libignition-math2-dev protobuf-compiler
+```
+
+#### Step 3 Clone the lab folder in /home/workspace/
 ```sh
 $ cd /home/workspace/
 $ git clone https://github.com/tobiassteidle/RoboND_P3_Where-Am-I
 ```
+
+#### Step 4 Add aditional Packages
+```sh
+$ cd /home/workspace/RoboND_P3_Where-Am-I/catkin_ws/src
+$ git clone https://github.com/udacity/pgm_map_creator.git
+```
+
+#### Step 5 Copy Worldfile
+```sh
+$ cd /home/workspace/RoboND_P3_Where-Am-I/catkin_ws/
+$ cp src/my_robot/worlds/Flat.world src/pgm_map_creator/world/Flat.world
+```
+
+
 
 #### Step 3 Compile the code
 ```sh
