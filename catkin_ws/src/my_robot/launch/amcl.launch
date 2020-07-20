@@ -5,7 +5,19 @@
   <arg name="map_file" default="$(find my_robot)/maps/Flat.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
-  <node name="amcl" pkg="amcl" type="amcl">
+  <!-- AMCL Node -->
+  <node name="amcl" pkg="amcl" type="amcl" output="screen">
+    <remap from="scan" to="my_robot/laser/scan"/>
+    <param name="odom_frame_id" value="odom"/>
+    <param name="odom_model_type" value="diff-corrected"/>
+    <param name="base_frame_id" value="robot_footprint"/>
+    <param name="global_frame_id" value="map"/>
+
+    <!-- If you choose to define initial pose here -->
+    <!--
+    <param name="initial_pose_x" value="0"/>
+    <param name="initial_pose_y" value="0"/>
+    -->
   </node>
 
   <node name="move_base" pkg="move_base" type="move_base">
