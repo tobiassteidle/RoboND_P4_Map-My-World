@@ -45,4 +45,7 @@ $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 
 ### Output
-![alt text](images/output.png)
+![alt text](images/output_1.png)
+![alt text](images/output_2.png)
+
+
