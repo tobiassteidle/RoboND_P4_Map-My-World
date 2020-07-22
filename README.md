@@ -7,6 +7,10 @@ Robotics Software Engineer Project "Where Am I"
 [AMCL Package](http://wiki.ros.org/amcl)
 [PGM Map Creator](https://github.com/udacity/pgm_map_creator.git)
 
+### Output Video
+## Video
+[![MCL](http://img.youtube.com/vi/SGKF_wKkWKs/0.jpg)](http://www.youtube.com/watch?v=SGKF_wKkWKs "MPC")
+
 ### Steps to launch the simulation
 
 #### Step 1 Update and upgrade the Workspace image
