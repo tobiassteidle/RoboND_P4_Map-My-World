@@ -34,6 +34,6 @@
               -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
 
    <!--launch rviz-->
-   <node name="rviz" pkg="rviz" type="rviz" respawn="false"/>
+   <!--<node name="rviz" pkg="rviz" type="rviz" respawn="false"/>-->
 
 </launch>

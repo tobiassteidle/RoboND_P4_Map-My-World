@@ -40,6 +40,8 @@ $ source devel/setup.bash
 #### Step 5 Run the Simulation  
 ```sh
 $ roslaunch my_robot world.launch
+$ roslaunch my_robot amcl.launch 
+$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 
 ### Output
