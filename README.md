@@ -1,11 +1,12 @@
 [![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
 
-# RoboND_P3_Where-Am-I
-Robotics Software Engineer Project "Where Am I"
+# RoboND_P4_Map-My-World
+Robotics Software Engineer Project "Map My World"
 
 ### Used Packages
-[AMCL Package](http://wiki.ros.org/amcl)
-[PGM Map Creator](https://github.com/udacity/pgm_map_creator.git)
+[rtabmap_ros](http://wiki.ros.org/rtabmap_ros)
+
+# PROJECT IS IN PROGRESS - DOCUMENTATION IS NOT READY
 
 ### Output Video
 ## Video
