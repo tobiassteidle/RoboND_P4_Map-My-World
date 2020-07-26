@@ -7,7 +7,7 @@ Robotics Software Engineer Project "Map My World"
 [rtabmap_ros](http://wiki.ros.org/rtabmap_ros)
 
 ### Output Video
-[![MCL](http://img.youtube.com/vi/SGKF_wKkWKs/0.jpg)](http://www.youtube.com/watch?v=SGKF_wKkWKs "MPC")
+[![MCL](http://img.youtube.com/vi/TAsDPuI8lic/0.jpg)](http://www.youtube.com/watch?v=SGKF_wKkWKs "MPC")
 
 ### Steps to launch the simulation
 
