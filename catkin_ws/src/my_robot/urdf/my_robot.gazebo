@@ -26,7 +26,7 @@
   </gazebo>
 
   <!-- RGBD Camera (Kinect) -->
-  <gazebo reference="camera_link">
+  <gazebo reference="camera">
     <sensor type="depth" name="camera1">
       <always_on>1</always_on>
       <update_rate>20.0</update_rate>
@@ -51,10 +51,10 @@
          <updateRate>10.0</updateRate>
          <cameraName>camera</cameraName>
          <frameName>camera_link_optical</frameName>
-         <imageTopicName>rgb/image_raw</imageTopicName>
-         <depthImageTopicName>depth/image_raw</depthImageTopicName>
+         <imageTopicName>/camera/rgb/image_raw</imageTopicName>
+         <depthImageTopicName>/camera/depth/image_raw</depthImageTopicName>
          <pointCloudTopicName>depth/points</pointCloudTopicName>
-         <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+         <cameraInfoTopicName>/camera/rgb/camera_info</cameraInfoTopicName>
          <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
          <pointCloudCutoff>0.4</pointCloudCutoff>
            <hackBaseline>0.07</hackBaseline>
