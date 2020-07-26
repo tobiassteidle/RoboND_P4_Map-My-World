@@ -42,12 +42,33 @@ $ catkin_make
 $ source devel/setup.bash
 ```
 
-#### Step 5 Run the Simulation  
+#### Step 5 Run the Simulation (Option 1)
 ```sh
 $ roslaunch my_robot world.launch
-$ roslaunch openni_launch openni.launch depth_registration:=true
+$ roslaunch my_robot mapping.launch
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
+
+After driving around in the environment with stop the ```roslaunch my_robot mapping.launch``` process.  
+The `rtabmap.db` will stored.
+  
+Then run ```rtabmap-databaseViewer ~/.ros/rtabmap.db``` to launch the RAB-Map Database Viewer.  
+Under `View` select `Constrints view` and `Graph view`
+
+The result will look like this:
+![alt text](images/rtab_db_viewer.png)
+
+
+
+#### Step 5 Run the Simulation (Option 2)  
+```sh
+$ roslaunch my_robot world.launch
+$ roslaunch my_robot localization.launch
+$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
+
+### Topic Graph
+![alt text](images/topic_graph.png)
 
 ### Output
 ![alt text](images/output_1.png)
