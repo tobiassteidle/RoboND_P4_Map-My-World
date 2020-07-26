@@ -58,7 +58,8 @@ Under `View` select `Constrints view` and `Graph view`
 The result will look like this:
 ![alt text](images/rtab_db_viewer.png)
 
-A sample `rtabmap.db` is in this repository in `rtabmap/` directory.
+### Sample rtabmap.db
+A sample [rtabmap.db](rtabmap/rtabmap.db) is in this repository in `rtabmap/` directory.
 
 #### Step 5 Run the Simulation (Option 2 - perform localization using the created map)  
 ```sh
