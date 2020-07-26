@@ -22,18 +22,18 @@ $ sudo apt-get upgrade -y
 
 #### Step 2 Install dependencies
 ```sh
-$ sudo apt-get install libignition-math2-dev protobuf-compiler
+$ sudo apt-get install ros-kinetic-rtabmap-ros
 ```
 
 #### Step 3 Clone the lab folder in /home/workspace/
 ```sh
 $ cd /home/workspace/
-$ git clone https://github.com/tobiassteidle/RoboND_P3_Where-Am-I
+$ git clone https://github.com/tobiassteidle/RoboND_P4_Map-My-World
 ```
 
 #### Step 3 Compile the code
 ```sh
-$ cd /home/workspace/RoboND_P3_Where-Am-I/catkin_ws
+$ cd /home/workspace/RoboND_P4_Map-My-World/catkin_ws
 $ catkin_make
 ```
 
@@ -45,7 +45,7 @@ $ source devel/setup.bash
 #### Step 5 Run the Simulation  
 ```sh
 $ roslaunch my_robot world.launch
-$ roslaunch my_robot amcl.launch 
+$ roslaunch openni_launch openni.launch depth_registration:=true
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 
